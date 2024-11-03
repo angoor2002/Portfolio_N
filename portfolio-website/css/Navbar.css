@@ -1,0 +1,52 @@
+/* src/css/Navbar.css */
+
+.navbar {
+  background-color: #111;
+  padding: 0rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex; /* Use flexbox to arrange items */
+  align-items: center; /* Vertically center the items */
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 0.25rem;
+  display: flex; /* Make link a flex container */
+  align-items: center; /* Center align the icon and text */
+}
+
+.home-link {
+  margin-right: auto; /* Push home link to the left */
+}
+
+.home-icon {
+  width: 35px; /* Set a fixed width */
+  height: 35px; /* Set a fixed height */
+  margin-right: 0.5rem; /* Space between icon and text */
+  margin-top: 0.5rem; /* Add a top margin */
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: lightgreen;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
