@@ -93,9 +93,9 @@ const WorkExperience = () => {
           <div key={index} style={itemStyle}>
             <img src={exp.icon} alt={`${exp.company} Logo`} style={iconStyle} />
             <div style={textContainerStyle}>
-              <strong>{exp.company}</strong> - {exp.position} <br />
-              <span style={{ color: 'lightgreen' }}>Year:</span> {exp.year} <br />
-              <span style={{ color: 'lightgreen' }}>Description:</span> {exp.description}
+              <strong>{exp.company} - {exp.position} </strong><br />
+              <span style={{ color: 'lightgreen' }}>Year: {exp.year} </span><br />
+              <span style={{ color: 'lightgreen' }}>Description:</span> <span>{exp.description}</span>
             </div>
           </div>
         ))}

@@ -1,0 +1,22 @@
+.cursor-line {
+    position: absolute;
+    width: 80px; /* Length of the line */
+    height: 2px; /* Thickness of the line */
+    background-color: lightgreen;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    transition: all 0.05s ease-out; /* Smooth transition for the movement */
+    animation: fadeLine 1s ease-out infinite;
+}
+
+@keyframes fadeLine {
+    0% {
+        opacity: 0.8;
+        transform: scaleX(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleX(0.8);
+    }
+}

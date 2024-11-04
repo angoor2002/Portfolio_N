@@ -8,10 +8,13 @@ import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Resume from '../components/Resume';
 import Contact from '../components/Contact';
+import CursorTrail from '../components/CursorTrail'; 
 
 function App() {
   return (
     <div style={{ backgroundColor: '#000', color: '#fff', margin: 0, fontFamily: 'Arial, sans-serif' }}>
+      <CursorTrail/>
+      {/* <AnimatedCursor /> */}
       <Hi/>
       <Navbar />
       <About />

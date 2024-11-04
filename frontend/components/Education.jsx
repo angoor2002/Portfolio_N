@@ -87,9 +87,9 @@ const Education = () => {
           <div key={index} style={itemStyle}>
             <img src={edu.icon} alt="School Icon" style={iconStyle} />
             <div style={textContainerStyle}>
-              <strong>{edu.institution}</strong> - {edu.degree} <br />
-              <span style={{ color: 'lightgreen' }}>Graduated:</span> {edu.year} <br />
-              <span style={{ color: 'lightgreen' }}>GPA:</span> {edu.gpa}
+              <strong>{edu.institution} - {edu.degree}</strong> <br />
+              <span style={{ color: 'lightgreen' }}>Graduated:</span> <span>{edu.year}</span><br />
+              <span style={{ color: 'lightgreen' }}>GPA:</span> <span>{edu.gpa}</span>
             </div>
           </div>
         ))}
